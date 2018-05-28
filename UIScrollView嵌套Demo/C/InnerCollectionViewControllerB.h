@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "InnerBaseViewController.h"
 
-@interface InnerTableViewControllerB : InnerBaseViewController
+@interface InnerCollectionViewControllerB : InnerBaseViewController
 
 @end

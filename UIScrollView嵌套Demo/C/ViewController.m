@@ -10,7 +10,7 @@
 #import "MYTableView.h"
 #import "MYSwipeView.h"
 #import "InnerTableViewControllerA.h"
-#import "InnerTableViewControllerB.h"
+#import "InnerCollectionViewControllerB.h"
 #import "Header.h"
 #import "ScrollStateManager.h"
 
@@ -48,9 +48,9 @@
 - (MYSwipeView *)swipeView {
     if (!_swipeView) {
         InnerTableViewControllerA *a = [InnerTableViewControllerA new];
-        InnerTableViewControllerB *b = [InnerTableViewControllerB new];
-        InnerTableViewControllerB *c = [InnerTableViewControllerB new];
-        InnerTableViewControllerB *d = [InnerTableViewControllerB new];
+        InnerCollectionViewControllerB *b = [InnerCollectionViewControllerB new];
+        InnerTableViewControllerA *c = [InnerTableViewControllerA new];
+        InnerCollectionViewControllerB *d = [InnerCollectionViewControllerB new];
         NSArray *controllers = @[a, b, c, d];
         NSArray *titles = @[@"ControllerA", @"ControllerB", @"ControllerC", @"ControllerD"];
         CGRect rect = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - TOPHEIGHT);
@@ -77,6 +77,7 @@
 
 #pragma mark - Private
 - (void)setupUI {
+    self.title = @"UIScrollView嵌套";
     [self.view addSubview:self.tableView];
 }
 

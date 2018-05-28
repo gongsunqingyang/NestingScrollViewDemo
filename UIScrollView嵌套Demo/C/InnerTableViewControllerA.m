@@ -26,8 +26,6 @@
     return _tableView;
 }
 
-#pragma mark - Getter, Setter
-
 
 #pragma mark - LifeCycle
 - (void)viewDidLoad {
@@ -38,7 +36,7 @@
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 50;
+    return arc4random()%100;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
