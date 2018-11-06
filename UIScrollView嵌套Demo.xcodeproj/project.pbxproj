@@ -11,6 +11,8 @@
 		CC6717EA20B7E12200D81423 /* InnerBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6717E920B7E12200D81423 /* InnerBaseViewController.m */; };
 		CC6717ED20B7E1F900D81423 /* MYSwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6717EC20B7E1F900D81423 /* MYSwipeView.m */; };
 		CC6717F020B7EA2600D81423 /* InnerCollectionViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6717EF20B7EA2600D81423 /* InnerCollectionViewControllerB.m */; };
+		CC7A13442148C27C00D237EC /* MYScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7A13432148C27C00D237EC /* MYScrollViewController.m */; };
+		CC7AC21A21913E8A008C349A /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC7AC21921913E8A008C349A /* Property List.plist */; };
 		CCF06E4C20B5673500EF4235 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF06E4B20B5673500EF4235 /* AppDelegate.m */; };
 		CCF06E5220B5673500EF4235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF06E5020B5673500EF4235 /* Main.storyboard */; };
 		CCF06E5420B5673600EF4235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF06E5320B5673600EF4235 /* Assets.xcassets */; };
@@ -31,6 +33,9 @@
 		CC6717EC20B7E1F900D81423 /* MYSwipeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSwipeView.m; sourceTree = "<group>"; };
 		CC6717EE20B7EA2600D81423 /* InnerCollectionViewControllerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InnerCollectionViewControllerB.h; sourceTree = "<group>"; };
 		CC6717EF20B7EA2600D81423 /* InnerCollectionViewControllerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InnerCollectionViewControllerB.m; sourceTree = "<group>"; };
+		CC7A13422148C27C00D237EC /* MYScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYScrollViewController.h; sourceTree = "<group>"; };
+		CC7A13432148C27C00D237EC /* MYScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYScrollViewController.m; sourceTree = "<group>"; };
+		CC7AC21921913E8A008C349A /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		CCF06E4720B5673400EF4235 /* UIScrollView嵌套Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIScrollView嵌套Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF06E4A20B5673400EF4235 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CCF06E4B20B5673500EF4235 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +66,7 @@
 		CC6717E520B7E0D900D81423 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				CC7AC21921913E8A008C349A /* Property List.plist */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -81,6 +87,8 @@
 			children = (
 				CCF06E4D20B5673500EF4235 /* ViewController.h */,
 				CCF06E6320B56C7400EF4235 /* ViewController.m */,
+				CC7A13422148C27C00D237EC /* MYScrollViewController.h */,
+				CC7A13432148C27C00D237EC /* MYScrollViewController.m */,
 				CC6717E820B7E12200D81423 /* InnerBaseViewController.h */,
 				CC6717E920B7E12200D81423 /* InnerBaseViewController.m */,
 				CCF06E6520B573F700EF4235 /* InnerTableViewControllerA.h */,
@@ -186,6 +194,7 @@
 			files = (
 				CCF06E5720B5673600EF4235 /* LaunchScreen.storyboard in Resources */,
 				CCF06E5420B5673600EF4235 /* Assets.xcassets in Resources */,
+				CC7AC21A21913E8A008C349A /* Property List.plist in Resources */,
 				CCF06E5220B5673500EF4235 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC3D641020B6B0A900A317DA /* ScrollStateManager.m in Sources */,
+				CC7A13442148C27C00D237EC /* MYScrollViewController.m in Sources */,
 				CC6717ED20B7E1F900D81423 /* MYSwipeView.m in Sources */,
 				CCF06E6720B573F700EF4235 /* InnerTableViewControllerA.m in Sources */,
 				CCF06E6220B568EE00EF4235 /* MYTableView.m in Sources */,

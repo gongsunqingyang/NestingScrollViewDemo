@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ANN-kd-aEz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ANN-kd-aEz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,90 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="tmN-1U-5G9">
+            <objects>
+                <viewController id="bJL-ww-yRO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LJf-F0-GT2"/>
+                        <viewControllerLayoutGuide type="bottom" id="gNn-Aw-eKF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Flr-NJ-aBx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2g-Dk-3os">
+                                <rect key="frame" x="129" y="176" width="117" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="UIScrollView嵌套"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="JeM-Fo-PeR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkA-V9-M7k">
+                                <rect key="frame" x="126" y="303" width="123" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="边缘返回手势冲突"/>
+                                <connections>
+                                    <segue destination="5PB-bd-7lx" kind="show" id="15W-Pz-bUx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nVG-Hb-qHS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Tl-pT-Gg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="-602"/>
+        </scene>
+        <!--Scroll View Controller-->
+        <scene sceneID="nRX-SF-NUi">
+            <objects>
+                <viewController id="5PB-bd-7lx" customClass="MYScrollViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Tl-7Q-fCm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fsr-zq-Qlg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W8m-CD-4Pj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1dB-OC-cNh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gamersky_11origin_21_2015591836A58" translatesAutoresizingMaskIntoConstraints="NO" id="PYc-CK-Gsg">
+                                        <rect key="frame" x="0.0" y="0.0" width="700" height="1500"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="700" id="XbK-qA-bMB"/>
+                                            <constraint firstAttribute="height" constant="1500" id="qks-D9-p5L"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PYc-CK-Gsg" secondAttribute="bottom" id="8Bk-T8-BCn"/>
+                                    <constraint firstItem="PYc-CK-Gsg" firstAttribute="leading" secondItem="1dB-OC-cNh" secondAttribute="leading" id="eCY-QV-7hd"/>
+                                    <constraint firstAttribute="trailing" secondItem="PYc-CK-Gsg" secondAttribute="trailing" id="mxI-XS-DJM"/>
+                                    <constraint firstItem="PYc-CK-Gsg" firstAttribute="top" secondItem="1dB-OC-cNh" secondAttribute="top" id="sRx-Px-Oi0"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1dB-OC-cNh" firstAttribute="top" secondItem="W8m-CD-4Pj" secondAttribute="top" id="8Ru-DG-duG"/>
+                            <constraint firstItem="1dB-OC-cNh" firstAttribute="leading" secondItem="W8m-CD-4Pj" secondAttribute="leading" id="AcI-94-9Qi"/>
+                            <constraint firstItem="Fsr-zq-Qlg" firstAttribute="top" secondItem="1dB-OC-cNh" secondAttribute="bottom" id="ncn-54-uLA"/>
+                            <constraint firstAttribute="trailing" secondItem="1dB-OC-cNh" secondAttribute="trailing" id="rBd-Hc-983"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="1dB-OC-cNh" id="bZy-38-Rin"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X1K-eo-Xzx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1532" y="-170.46476761619192"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -26,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="118.29085457271366"/>
+            <point key="canvasLocation" x="1532" y="-833"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="erJ-ee-PSG">
@@ -39,12 +123,15 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OvE-dc-sLB"/>
+                        <segue destination="bJL-ww-yRO" kind="relationship" relationship="rootViewController" id="EfK-m4-WRZ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="121-Td-pQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="-579.76011994002999"/>
+            <point key="canvasLocation" x="20" y="-594"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gamersky_11origin_21_2015591836A58" width="1920" height="1200"/>
+    </resources>
 </document>
