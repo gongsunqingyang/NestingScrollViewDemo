@@ -66,7 +66,6 @@
 		CC6717E520B7E0D900D81423 /* M */ = {
 			isa = PBXGroup;
 			children = (
-				CC7AC21921913E8A008C349A /* Property List.plist */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -131,6 +130,7 @@
 				CCF06E5520B5673600EF4235 /* LaunchScreen.storyboard */,
 				CCF06E5820B5673600EF4235 /* Info.plist */,
 				CCF06E5920B5673600EF4235 /* main.m */,
+				CC7AC21921913E8A008C349A /* Property List.plist */,
 			);
 			path = "UIScrollView嵌套Demo";
 			sourceTree = "<group>";
