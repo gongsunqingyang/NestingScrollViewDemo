@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC222FC821B7C3AF00D90C40 /* manifest.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC222FC721B7C3AF00D90C40 /* manifest.plist */; };
 		CC3D641020B6B0A900A317DA /* ScrollStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3D640F20B6B0A900A317DA /* ScrollStateManager.m */; };
 		CC6717EA20B7E12200D81423 /* InnerBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6717E920B7E12200D81423 /* InnerBaseViewController.m */; };
 		CC6717ED20B7E1F900D81423 /* MYSwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6717EC20B7E1F900D81423 /* MYSwipeView.m */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC222FC721B7C3AF00D90C40 /* manifest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = manifest.plist; sourceTree = "<group>"; };
 		CC3D640E20B6B0A900A317DA /* ScrollStateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollStateManager.h; sourceTree = "<group>"; };
 		CC3D640F20B6B0A900A317DA /* ScrollStateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollStateManager.m; sourceTree = "<group>"; };
 		CC5C8C7A20B6564300051175 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				CCF06E5020B5673500EF4235 /* Main.storyboard */,
 				CCF06E5320B5673600EF4235 /* Assets.xcassets */,
 				CCF06E5520B5673600EF4235 /* LaunchScreen.storyboard */,
+				CC222FC721B7C3AF00D90C40 /* manifest.plist */,
 				CCF06E5820B5673600EF4235 /* Info.plist */,
 				CCF06E5920B5673600EF4235 /* main.m */,
 				CC7AC21921913E8A008C349A /* Property List.plist */,
@@ -194,6 +197,7 @@
 			files = (
 				CCF06E5720B5673600EF4235 /* LaunchScreen.storyboard in Resources */,
 				CCF06E5420B5673600EF4235 /* Assets.xcassets in Resources */,
+				CC222FC821B7C3AF00D90C40 /* manifest.plist in Resources */,
 				CC7AC21A21913E8A008C349A /* Property List.plist in Resources */,
 				CCF06E5220B5673500EF4235 /* Main.storyboard in Resources */,
 			);

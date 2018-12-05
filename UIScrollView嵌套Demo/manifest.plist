@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://gitee.com/Ser/SP-IGXE/raw/master/IGXEAssistant-xresign-B31.ipa</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>full-size-image</string>
+					<key>needs-shine</key>
+					<false/>
+					<key>url</key>
+					<string>https://gitee.com/Ser/SP-IGXE/raw/master/icon512.png</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>display-image</string>
+					<key>needs-shine</key>
+					<false/>
+					<key>url</key>
+					<string>https://gitee.com/Ser/SP-IGXE/raw/master/icon57.png</string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>subtitle</key>
+				<string>电竞交易平台</string>
+				<key>title</key>
+				<string>IGXE</string>
+				<key>bundle-version</key>
+				<string>1.0</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>bundle-identifier</key>
+				<string>com.soft.igxe</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
